@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* global css */
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  font-family: Arial, sans-serif;
+
+}
+#root, html, body{
+  /* background-color: #f5f5f5; */
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div, header, h1, h2,h3,h4,h5,h6, ul,li, html,i,img,label,p, small, span{
+  margin: 0 ;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 24px;
+  line-height: .8;
+}
+label {
+  font-size: .7rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input.form-control, input.form-control:focus {
+  background: #F0F0FF;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  position: absolute;
+  color: red;
+  font-size: .6rem;
 }
